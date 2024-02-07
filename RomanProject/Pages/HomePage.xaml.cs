@@ -1,5 +1,4 @@
-﻿using RomanProject.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,16 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RomanProject
-{   
-    public partial class MainWindow : Window
+namespace RomanProject.Pages
+{
+    /// <summary>
+    /// Логика взаимодействия для HomePage.xaml
+    /// </summary>
+    public partial class HomePage : Page
     {
-        public MainWindow()
+        public HomePage()
         {
             InitializeComponent();
-            AppFrame.frame = FrmMain;
-            FrmMain.Navigate(new AuthorizationPage());
-            
         }
     }
 }

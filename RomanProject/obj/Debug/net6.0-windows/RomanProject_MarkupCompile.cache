@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\мыших\Desktop\RomanProject\RomanProject\App.xaml
-11407045341
+3-1815595863
 
-5-1617221907
+22774909920
 212-1787163033
-MainWindow.xaml;
+MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\HomePage.xaml;
 
 False
 
