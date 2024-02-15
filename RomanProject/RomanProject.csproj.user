@@ -7,10 +7,28 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\AddEditClientsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddEditEmployeesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddEditOrdersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\AuthorizationPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\ClientsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\EmployeesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\OrdersPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,10 +36,28 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\AddEditClientsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddEditEmployeesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddEditOrdersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\AuthorizationPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\ClientsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\EmployeesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\OrdersPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

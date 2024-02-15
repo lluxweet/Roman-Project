@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:RomanProject.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="550" d:DesignWidth="1000"
       Title="HomePage">
 
     <Grid>
@@ -13,7 +13,18 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
-        
+
+        <StackPanel Grid.Column="0" Background="{StaticResource белый}">
+            <StackPanel Margin="0 10 0 60">
+                <TextBlock Text="виталя какао" Style="{StaticResource TextBig}" HorizontalAlignment="Center" />
+                <TextBlock Text="горничная" Style="{StaticResource TextSmall}" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <Button Style="{StaticResource Navigatoin}" Content="сотрудники" Height="35" Width="170" Margin="0 20" x:Name="btnEmployees" Click="btnEmployees_Click"/>
+            <Button Style="{StaticResource Navigatoin}" Content="контрагенты" Height="35" Width="170" Margin="0 20" x:Name="btnClients" Click="btnClients_Click"/>
+            <Button Style="{StaticResource Navigatoin}" Content="заказы" Height="35" Width="170" Margin="0 20" x:Name="btnOrders" Click="btnOrders_Click"/>
+            <Button Grid.Column="0" Style="{StaticResource Navigatoin}" Foreground="DarkRed" Background="Transparent" Margin="0 100" BorderThickness="2" Content="выйти" Height="35" Width="124" x:Name="btnExit" Click="btnExit_Click"/>
+
+        </StackPanel>
+        <Frame Grid.Column="1" Background="{StaticResource белый}" x:Name="frame"/>
     </Grid>
 </Page>

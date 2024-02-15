@@ -15,14 +15,32 @@ using System.Windows.Shapes;
 
 namespace RomanProject.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для HomePage.xaml
-    /// </summary>
     public partial class HomePage : Page
     {
         public HomePage()
         {
             InitializeComponent();
+            AppFrame.frame = frame;
         }
+
+        private void btnEmployees_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new EmployeesPage());
+        }
+
+        private void btnClients_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new ClientsPage());
+        }
+
+        private void btnOrders_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new OrdersPage());
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AuthorizationPage());
+        }        
     }
 }

@@ -14,5 +14,8 @@ namespace RomanProject.Models
         public string password { get; set; }
         public DateTime? date_delete { get; set; }
         public int id_role { get; set; }
+
+        public CounterpartiesEntity Counterparties { get; set; }
+        public RoleEntity Role { get; set; }
     }
 }

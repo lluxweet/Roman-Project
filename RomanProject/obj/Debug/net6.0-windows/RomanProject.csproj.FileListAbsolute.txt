@@ -58,3 +58,16 @@ C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\P
 C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\HomePage.g.cs
 C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\AuthorizationPage.baml
 C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\HomePage.baml
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\App.baml
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\EmployeesPage.g.cs
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\EmployeesPage.baml
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\OrdersPage.g.cs
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\OrdersPage.baml
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\AddEditOrdersPage.g.cs
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\ClientsPage.g.cs
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\AddEditOrdersPage.baml
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\ClientsPage.baml
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\AddEditClientsPage.g.cs
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\AddEditEmployeesPage.g.cs
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\AddEditClientsPage.baml
+C:\Users\мыших\Desktop\RomanProject\RomanProject\obj\Debug\net6.0-windows\Pages\AddEditEmployeesPage.baml

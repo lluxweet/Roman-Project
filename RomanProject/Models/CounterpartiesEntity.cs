@@ -14,5 +14,8 @@ namespace RomanProject.Models
         public int address_id { get; set; }
         public DateTime? date_delete { get; set;}
         public int type_id { get; set; }
+
+        public AdressEntity Address {  get; set; }
+        public CounterpartyTypeEntity CounterpartyType { get; set; }
     }
 }

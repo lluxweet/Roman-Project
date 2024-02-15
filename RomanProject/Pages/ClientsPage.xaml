@@ -1,0 +1,50 @@
+﻿<Page x:Class="RomanProject.Pages.ClientsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RomanProject.Pages"
+      mc:Ignorable="d" 
+      Background="{StaticResource светлый}"
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="ClientsPage">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="клиенты" Style="{StaticResource TextBig2}" Margin="20 0" Foreground="{StaticResource белый}"/>
+                <TextBlock Text="поиск:" Style="{StaticResource TextBig}" Height="25" Margin="100 0 0 0" Foreground="{StaticResource белый}"/>
+                <TextBox Style="{StaticResource TextBox}" Width="240"/>
+            </StackPanel>
+            <Button x:Name="BtnAdd" Content="Добавить" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Row="1" Style="{StaticResource BUTTONCHKI}" Margin="0,0,20,15" Height="30" Width="113" Click="BtnAdd_Click"/>
+            <DataGrid Grid.Row="1" AutoGenerateColumns="False" x:Name="gridEmployee" Margin="21,10,21,61" Style="{StaticResource DataGrid}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+         Binding="{Binding full_name}"
+         Header="полное имя"
+         Width="*"/>
+                    <DataGridTextColumn
+         Binding="{Binding phone}"
+         Header="телефон"
+         Width="*"/>
+                    <DataGridTextColumn
+         Binding="{Binding address_id}"
+         Header="адрес"
+         Width="*"/>
+                    <DataGridTextColumn
+         Binding="{Binding date_delete}"
+         Header="дата удаления"
+         Width="*"/>
+                    <DataGridTextColumn
+         Binding="{Binding CounterpartyType.name}"
+         Header="тип"
+         Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Page>

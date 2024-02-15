@@ -4,17 +4,130 @@
              xmlns:local="clr-namespace:RomanProject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+
+        <SolidColorBrush x:Key="темный" Color="#363062"/>
+        <SolidColorBrush x:Key="странный цвет" Color="#435585"/>
+        <SolidColorBrush x:Key="светлый" Color="#818FB4"/>
+        <SolidColorBrush x:Key="белый" Color="#F5E8C7"/>
+
         <Style x:Key="TextBig" TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Impact"/>
-            <Setter Property="FontSize" Value="27"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="25"/>
             <Setter Property="FontStretch" Value="UltraExpanded"/>
             <Setter Property="Opacity" Value="0.6"/>
+            <Setter Property="Foreground" Value="{StaticResource темный}"/>
+        </Style>
+        <Style x:Key="TextBig2" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="27"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontStretch" Value="UltraExpanded"/>           
+            <Setter Property="Foreground" Value="{StaticResource странный цвет}"/>
         </Style>
         <Style x:Key="TextSmall" TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Impact"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="FontStretch" Value="UltraExpanded"/>
             <Setter Property="Opacity" Value="0.6"/>
+            <Setter Property="Foreground" Value="{StaticResource темный}"/>
+        </Style>
+
+        <Style x:Key="Navigatoin" TargetType="Button">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontStretch" Value="UltraExpanded"/>
+            <Setter Property="Opacity" Value="0.8"/>
+            <Setter Property="BorderThickness" Value="0"/>            
+            <Setter Property="Background" Value="{StaticResource темный}"/>
+            <Setter Property="Foreground" Value="{StaticResource светлый}"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource темный}"/>
+                    <Setter Property="Foreground" Value="{StaticResource светлый}"/>
+                </Trigger>
+                <Trigger Property="IsMouseCaptured" Value="True">
+                    <Setter Property="Background" Value="{StaticResource странный цвет}"/>
+                    <Setter Property="Foreground" Value="{StaticResource белый}"/>
+                </Trigger>
+                <Trigger Property="Focusable" Value="True">
+                    <Setter Property="Background" Value="{StaticResource странный цвет}"/>
+                    <Setter Property="Foreground" Value="{StaticResource белый}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="BUTTONCHKI" TargetType="Button">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontStretch" Value="UltraExpanded"/>
+            <Setter Property="Opacity" Value="0.8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background" Value="{StaticResource темный}"/>
+            <Setter Property="Foreground" Value="{StaticResource светлый}"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource темный}"/>
+                    <Setter Property="Foreground" Value="{StaticResource светлый}"/>
+                </Trigger>
+                <Trigger Property="IsMouseCaptured" Value="True">
+                    <Setter Property="Background" Value="{StaticResource странный цвет}"/>
+                    <Setter Property="Foreground" Value="{StaticResource белый}"/>
+                </Trigger>
+                <Trigger Property="Focusable" Value="True">
+                    <Setter Property="Background" Value="{StaticResource странный цвет}"/>
+                    <Setter Property="Foreground" Value="{StaticResource белый}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="TextBox" TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="20"/>                        
+            <Setter Property="Foreground" Value="{StaticResource темный}"/>
+        </Style>
+        
+        <Style x:Key="PasswordBox" TargetType="PasswordBox">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="{StaticResource темный}"/>            
+        </Style>
+       
+        <Style x:Key="DataGrid" TargetType="DataGrid">
+            <Setter Property="ColumnHeaderStyle" Value="{DynamicResource ColumnHeaderStyle}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="{StaticResource белый}"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="{StaticResource темный}"/>
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="Transparent"/>
+            <Setter Property="VerticalGridLinesBrush" Value="Transparent"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+        </Style>
+
+        <Style x:Key="ColumnHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource темный}"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="ComboBox" x:Key="Combobox">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="{StaticResource темный}"/>
+        </Style>
+        
+        <Style TargetType="DatePicker">
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="{StaticResource темный}"/>
         </Style>
     </Application.Resources>
 </Application>
